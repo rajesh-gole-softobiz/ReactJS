@@ -1,25 +1,37 @@
-const { Fragment } = require('react');
-const React = require('react');
-const ReactDOM = require('react-dom');
-
-//##################################### 5. JSX Attributes
-
-const name = 'Rajesh';
-const links = 'https://google.com';
+import React from 'react';
+import ReactDOM from 'react-dom';
+import './index.css';
+//##################################### 6. CSS
+const name = 'ReactJS';
 ReactDOM.render(
     <>
-    <h1 contentEditable='true'>{`Hello, This is ${name}`}</h1>
+    <h1 className='heading'>{`Hello, welcome to ${name}`}</h1>
     <img   src='https://picsum.photos/200/300' alt='img1'/>
     <img   src='https://picsum.photos/250/300' alt='img1'/>
     <img   src='https://picsum.photos/300/300' alt='img1'/>
 
-    <p>
-        <a href={links} target='_blank'>Click Here</a>
-    </p>
-
     </>,
     document.getElementById('root')
 )
+
+//##################################### 5. JSX Attributes
+
+// const name = 'Rajesh';
+// const links = 'https://google.com';
+// ReactDOM.render(
+//     <>
+//     <h1 contentEditable='true'>{`Hello, This is ${name}`}</h1>
+//     <img   src='https://picsum.photos/200/300' alt='img1'/>
+//     <img   src='https://picsum.photos/250/300' alt='img1'/>
+//     <img   src='https://picsum.photos/300/300' alt='img1'/>
+
+//     <p>
+//         <a href={links} rel="noreferrer" target='_blank'>Click Here</a>
+//     </p>
+
+//     </>,
+//     document.getElementById('root')
+// )
 
 
 //##################################### 4. JSX Challenge-2
