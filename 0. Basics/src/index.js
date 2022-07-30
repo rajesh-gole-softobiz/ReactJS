@@ -2,15 +2,29 @@ const { Fragment } = require('react');
 const React = require('react');
 const ReactDOM = require('react-dom');
 
-//##################################### 3. JSX Expression in React - Template Literale
-const fname= 'RAJESH';
-const lname='GOLE';
+
+//##################################### 4. JSX Challenge-2
+const curDate =new Date().toLocaleDateString();
+const curTime =new Date().toLocaleTimeString();
+
 ReactDOM.render(
     <>
-    <h1>{`My full name is ${fname} ${lname}`}</h1>
+    <h1>Hello, This is my 2nd Challange</h1>
+    <p>{`Today date : ${curDate}`}</p>
+    <p>{`Today date : ${curTime}`}</p>
     </>,
     document.getElementById('root')
 )
+
+//##################################### 3. JSX Expression in React - Template Literale
+// const fname= 'RAJESH';
+// const lname='GOLE';
+// ReactDOM.render(
+//     <>
+//     <h1>{`My full name is ${fname} ${lname}`}</h1>
+//     </>,
+//     document.getElementById('root')
+// )
 
 
 //##################################### 2. JSX Challenge-1
