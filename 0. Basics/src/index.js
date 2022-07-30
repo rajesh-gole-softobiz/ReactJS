@@ -2,19 +2,38 @@ const { Fragment } = require('react');
 const React = require('react');
 const ReactDOM = require('react-dom');
 
+//##################################### 5. JSX Attributes
 
-//##################################### 4. JSX Challenge-2
-const curDate =new Date().toLocaleDateString();
-const curTime =new Date().toLocaleTimeString();
-
+const name = 'Rajesh';
+const links = 'https://google.com';
 ReactDOM.render(
     <>
-    <h1>Hello, This is my 2nd Challange</h1>
-    <p>{`Today date : ${curDate}`}</p>
-    <p>{`Today date : ${curTime}`}</p>
+    <h1 contentEditable='true'>{`Hello, This is ${name}`}</h1>
+    <img   src='https://picsum.photos/200/300' alt='img1'/>
+    <img   src='https://picsum.photos/250/300' alt='img1'/>
+    <img   src='https://picsum.photos/300/300' alt='img1'/>
+
+    <p>
+        <a href={links} target='_blank'>Click Here</a>
+    </p>
+
     </>,
     document.getElementById('root')
 )
+
+
+//##################################### 4. JSX Challenge-2
+// const curDate =new Date().toLocaleDateString();
+// const curTime =new Date().toLocaleTimeString();
+
+// ReactDOM.render(
+//     <>
+//     <h1>Hello, This is my 2nd Challange</h1>
+//     <p>{`Today date : ${curDate}`}</p>
+//     <p>{`Today date : ${curTime}`}</p>
+//     </>,
+//     document.getElementById('root')
+// )
 
 //##################################### 3. JSX Expression in React - Template Literale
 // const fname= 'RAJESH';
