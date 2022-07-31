@@ -4,8 +4,10 @@ import Para from './Para';
 
 function App() {
     return (
-        <Heading/>,
+        <>
+        <Heading/>
         <Para/>
+        </>
     )
 }
 
