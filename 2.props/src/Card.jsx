@@ -3,8 +3,9 @@ const myDesc = 'JSX is a syntax extension of JavaScript. It is used with React t
 const date = new Date();
 const myDate = date.toLocaleDateString();
 function Card(props) {
+    const {myTitle} = props;
     return <div className='card'>
-    <h3 className='cardTitle'>{props.myTitle}</h3>
+    <h3 className='cardTitle'>{myTitle}</h3>
     <p className='cardDesc'>{myDesc}</p>
     <p className='cardDate'>{myDate}</p>
   </div>
