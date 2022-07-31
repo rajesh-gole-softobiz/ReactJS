@@ -3,9 +3,9 @@ import Card from "./Card";
 
 function App(){
     return <>
-    <Card/>
-    <Card/>
-    <Card/>
+    <Card myTitle='My first props'/>
+    <Card myTitle='My second props'/>
+    <Card myTitle='My third props'/>
     </>
 }
 
