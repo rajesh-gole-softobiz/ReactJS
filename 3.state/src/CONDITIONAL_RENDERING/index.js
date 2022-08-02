@@ -14,6 +14,9 @@ class C_Rendering extends Component {
 
 
   render() {
+    
+
+    //Method-1 : if-else
     if(this.state.isLoggedIn){
         return <HomePage/>
     }else{
