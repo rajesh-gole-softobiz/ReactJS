@@ -16,12 +16,26 @@ class C_Rendering extends Component {
   render() {
     
 
-    //Method-1 : if-else
-    if(this.state.isLoggedIn){
-        return <HomePage/>
+    //Method-2 :element-variable
+    const {isLoggedIn} = this.state
+    let element;
+    if(isLoggedIn){
+        element = <HomePage/>
     }else{
-        return <LoginPage/>
+        element = <LoginPage/>
     }
+    return (
+        <>
+        {element}
+        </>
+    )
+
+    //Method-1 : if-else
+    // if(this.state.isLoggedIn){
+    //     return <HomePage/>
+    // }else{
+    //     return <LoginPage/>
+    // }
     
   }
 }
